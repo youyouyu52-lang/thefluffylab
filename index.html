@@ -252,7 +252,7 @@
     object-position: center top;
   }
 
-  .spotlight-body { padding: 24px 20px 28px; }
+  .spotlight-body { padding: 18px 18px 20px; }
 
   .spotlight-eyebrow {
     font-size: 10px;
@@ -267,17 +267,21 @@
     font-family: 'Playfair Display', serif;
     font-size: clamp(20px, 5vw, 32px);
     font-weight: 400;
-    line-height: 1.3;
-    margin-bottom: 14px;
+    line-height: 1.25;
+    margin-bottom: 10px;
     color: var(--deep);
   }
   .spotlight-title em { font-style: italic; color: var(--spring); }
 
   .spotlight-desc {
     font-size: 14px;
-    line-height: 1.85;
+    line-height: 1.7;
     color: var(--bark);
-    margin-bottom: 22px;
+    margin-bottom: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .spotlight-btn {
@@ -376,21 +380,27 @@
 
   .card-footer {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 8px;
     border-top: 1px solid var(--sand);
-    padding-top: 10px;
+    padding-top: 12px;
   }
 
-  .card-price { font-size: 11px; font-weight: 500; color: var(--deep); }
+  .card-price { font-size: 11px; color: var(--bark); }
 
   .card-cta {
-    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--spring);
+    color: white;
+    font-size: 11px;
+    font-weight: 500;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--spring);
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 1px;
+    padding: 10px 12px;
+    width: 100%;
+    border-radius: 2px;
   }
 
   /* SPRING STRIP */
@@ -553,10 +563,25 @@
       height: 100%;
       max-height: 100%;
     }
-    .spotlight-body { padding: 48px 44px; overflow-y: auto; }
+    .spotlight-body { padding: 48px 44px; }
+    .spotlight-desc { -webkit-line-clamp: unset; overflow: visible; line-height: 1.85; margin-bottom: 28px; }
+    .spotlight-title { margin-bottom: 18px; line-height: 1.3; }
     .spotlight-btn { width: auto; display: inline-flex; }
     .spotlight-card:hover { box-shadow: 0 20px 60px rgba(59,42,26,0.13); }
     .spotlight-card:hover .spotlight-img img { transform: scale(1.03); transition: transform 0.6s ease; }
+  }
+
+  /* iPhone SE / very small phones ≤390px — single column cards */
+  @media (max-width: 390px) {
+    .product-grid { grid-template-columns: 1fr; }
+    .card-img { aspect-ratio: 4/3; }
+    .card-body { padding: 10px 10px 12px; }
+  }
+
+  /* Tablet 600-767px — 3 col grid, tighter spotlight image */
+  @media (min-width: 600px) and (max-width: 767px) {
+    .product-grid { grid-template-columns: repeat(3, 1fr); }
+    .spotlight-img { height: 55vw; max-height: 360px; }
   }
 </style>
 </head>
@@ -765,7 +790,7 @@
 
 
       <a class="card" href="https://amzn.to/4byBBwu" target="_blank" rel="noopener"
-         onclick="gtag('event','click',{{event_category:'affiliate',event_label:'cat8-boho-tower'}})">
+         onclick="gtag('event','click',{event_category:'affiliate',event_label:'cat8-boho-tower'})">
         <div class="card-img">
           <img src="images/cat8.jpg" alt="Boho living room with tall multi-level wicker basket cat tree and four cats, floral wallpaper and macrame" loading="lazy" width="900" height="1206">
           <span class="card-badge spring">New</span>
