@@ -223,6 +223,7 @@
     margin-right: auto;
   }
 
+
   /* SPOTLIGHT */
   .spotlight { padding: 0 16px; margin-bottom: 20px; }
 
@@ -236,8 +237,20 @@
     -webkit-tap-highlight-color: transparent;
   }
 
-  .spotlight-img { width: 100%; overflow: hidden; }
-  .spotlight-img img { width: 100%; display: block; height: 100%; object-fit: cover; }
+  .spotlight-img {
+    width: 100%;
+    overflow: hidden;
+    height: 72vw;
+    max-height: 420px;
+  }
+
+  .spotlight-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+  }
 
   .spotlight-body { padding: 24px 20px 28px; }
 
@@ -519,13 +532,6 @@
     .hero-img img { height: 100%; object-position: center; }
     .hero-copy { width: 50%; padding: 56px 48px; display: flex; flex-direction: column; justify-content: center; }
 
-    .spotlight { padding: 0 28px; max-width: 1100px; margin-left: auto; margin-right: auto; }
-    .spotlight-card { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; max-height: 620px; }
-    .spotlight-body { padding: 48px 44px; }
-    .spotlight-btn { width: auto; display: inline-flex; }
-    .spotlight-card:hover { box-shadow: 0 20px 60px rgba(59,42,26,0.13); }
-    .spotlight-card:hover .spotlight-img img { transform: scale(1.03); transition: transform 0.6s ease; }
-
     .grid-wrap { max-width: 1100px; margin: 0 auto; padding: 0 28px 88px; }
     .product-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .card-title { font-size: 17px; }
@@ -535,6 +541,22 @@
     .spring-strip { padding: 64px 48px; }
     .manifesto { padding: 72px 48px; }
     .pin-btn { width: auto; }
+
+    /* Spotlight desktop */
+    .spotlight { padding: 0 28px; max-width: 1100px; margin-left: auto; margin-right: auto; }
+    .spotlight-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 540px;
+    }
+    .spotlight-img {
+      height: 100%;
+      max-height: 100%;
+    }
+    .spotlight-body { padding: 48px 44px; overflow-y: auto; }
+    .spotlight-btn { width: auto; display: inline-flex; }
+    .spotlight-card:hover { box-shadow: 0 20px 60px rgba(59,42,26,0.13); }
+    .spotlight-card:hover .spotlight-img img { transform: scale(1.03); transition: transform 0.6s ease; }
   }
 </style>
 </head>
