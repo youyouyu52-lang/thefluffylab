@@ -240,16 +240,12 @@
   .spotlight-img {
     width: 100%;
     overflow: hidden;
-    height: 72vw;
-    max-height: 420px;
   }
 
   .spotlight-img img {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
-    object-fit: cover;
-    object-position: center top;
   }
 
   .spotlight-body { padding: 18px 18px 20px; }
@@ -557,11 +553,10 @@
     .spotlight-card {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      height: 540px;
+      align-items: center;
     }
     .spotlight-img {
-      height: 100%;
-      max-height: 100%;
+      height: auto;
     }
     .spotlight-body { padding: 48px 44px; }
     .spotlight-desc { -webkit-line-clamp: unset; overflow: visible; line-height: 1.85; margin-bottom: 28px; }
