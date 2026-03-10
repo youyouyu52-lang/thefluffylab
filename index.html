@@ -553,7 +553,7 @@
     .spotlight-card {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      align-items: center;
+      align-items: start;
     }
     .spotlight-img {
       height: auto;
@@ -573,10 +573,9 @@
     .card-body { padding: 10px 10px 12px; }
   }
 
-  /* Tablet 600-767px — 3 col grid, tighter spotlight image */
+  /* Tablet 600-767px — 3 col grid */
   @media (min-width: 600px) and (max-width: 767px) {
     .product-grid { grid-template-columns: repeat(3, 1fr); }
-    .spotlight-img { height: 55vw; max-height: 360px; }
   }
 </style>
 </head>
