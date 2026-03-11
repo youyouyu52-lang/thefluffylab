@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop the Look — Spring Reading Corner | TheFluffyLab</title>
+<meta name="description" content="Shop every piece from this airy mint green spring reading corner. Curated home picks for cat lovers who care about how their space looks.">
+
+<link rel="preload" as="image" href="images/room2.jpg">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WBYYY0XNMD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WBYYY0XNMD', {
+    page_title: 'Shop the Look — Spring Reading Corner',
+    page_path: '/thefluffylab/shop-the-look-2.html'
+  });
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --cream: #F4F8F7;       /* 接近图中墙面的冷白 */
+    --warm:  #FAFCFB;       /* 页面背景，略带蓝绿 */
+    --sand:  #D8E8E4;       /* 分割线，浅薄荷绿 */
+    --taupe: #8FAfa8;       /* 次要文字 */
+    --bark:  #5A7A74;       /* 描述文字，带绿的灰 */
+    --deep:  #1F3D38;       /* 深色文字/header，深青绿 */
+    --spring:#4A9E8E;       /* 主色调：浅蓝绿，取自墙面 */
+    --fern:  #3A8070;       /* hover深一级 */
+    --mint:  #C8E8E2;       /* 数字圆圈背景 */
+    --gold:  #C8A96E;       /* 点缀色，取自金色台灯 */
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { background:var(--cream); color:var(--deep); font-family:'Jost',sans-serif; font-weight:300; -webkit-font-smoothing:antialiased; }
+
+  .site-header {
+    background: var(--deep); padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .site-logo { font-family:'Playfair Display',serif; font-size:22px; color:var(--cream); text-decoration:none; }
+  .site-logo span { font-style:italic; color:var(--mint); }
+  .header-tag { font-size:11px; letter-spacing:0.15em; text-transform:uppercase; color:var(--taupe); }
+
+  .page-intro {
+    text-align:center; padding:40px 20px 32px;
+    background:var(--warm); border-bottom:1px solid var(--sand);
+  }
+  .page-intro .eyebrow { font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--fern); margin-bottom:10px; }
+  .page-intro h1 { font-family:'Playfair Display',serif; font-size:clamp(24px,6vw,42px); font-weight:400; line-height:1.25; margin-bottom:10px; }
+  .page-intro h1 em { font-style:italic; color:var(--spring); }
+  .page-intro p { font-size:14px; color:var(--bark); max-width:480px; margin:0 auto; line-height:1.8; }
+
+  .room-wrap { position:relative; max-width:900px; margin:32px auto; padding:0 16px; }
+  .room-img { width:100%; display:block; border-radius:2px; }
+  .dots-layer { position:absolute; inset:0; padding:0 16px; }
+
+  .dot {
+    position:absolute; transform:translate(-50%,-50%);
+    width:28px; height:28px; display:flex; align-items:center;
+    justify-content:center; text-decoration:none; z-index:10;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .dot-inner {
+    width:24px; height:24px; background:white; border:2px solid var(--spring);
+    border-radius:50%; display:flex; align-items:center; justify-content:center;
+    font-size:10px; font-weight:500; color:var(--spring);
+    position:relative; z-index:2; transition:all 0.2s;
+  }
+  .dot:hover .dot-inner, .dot:active .dot-inner {
+    background:var(--spring); color:white; transform:scale(1.15);
+  }
+  .dot-pulse {
+    position:absolute; width:28px; height:28px; border-radius:50%;
+    background:rgba(74,158,142,0.25); animation:pulse 2s ease-out infinite;
+  }
+  @keyframes pulse {
+    0% { transform:scale(0.8); opacity:1; }
+    100% { transform:scale(2); opacity:0; }
+  }
+
+  .shop-section { max-width:900px; margin:0 auto; padding:0 16px 72px; }
+  .shop-section h2 {
+    font-family:'Playfair Display',serif; font-size:clamp(20px,5vw,32px);
+    font-weight:400; margin-bottom:24px; padding-bottom:12px;
+    border-bottom:1px solid var(--sand);
+  }
+  .shop-section h2 em { font-style:italic; color:var(--spring); }
+
+  .shop-card {
+    display:flex; gap:16px; align-items:flex-start;
+    padding:18px 0; border-bottom:1px solid var(--sand);
+    text-decoration:none; color:inherit;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .shop-num {
+    flex-shrink:0; width:32px; height:32px; border-radius:50%;
+    background:var(--mint); color:var(--spring); font-size:12px;
+    font-weight:500; display:flex; align-items:center; justify-content:center; margin-top:2px;
+  }
+  .shop-info { flex:1; }
+  .shop-cat { font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:var(--fern); margin-bottom:4px; }
+  .shop-title { font-family:'Playfair Display',serif; font-size:17px; font-weight:400; line-height:1.3; margin-bottom:6px; color:var(--deep); }
+  .shop-desc { font-size:13px; line-height:1.7; color:var(--bark); margin-bottom:10px; }
+  .shop-cta {
+    font-size:11px; letter-spacing:0.15em; text-transform:uppercase;
+    color:white; background:var(--spring); padding:10px 20px;
+    display:inline-flex; align-items:center; gap:6px;
+    transition:background 0.2s, transform 0.15s;
+  }
+  .shop-card:hover .shop-cta { background:var(--fern); transform:translateX(3px); }
+  .shop-card:active .shop-cta { background:var(--deep); transform:translateX(0); }
+
+  .pin-section { text-align:center; padding:0 0 56px; }
+  .pin-btn {
+    display:inline-flex; align-items:center; gap:10px;
+    background:#E60023; color:white; text-decoration:none;
+    font-size:12px; letter-spacing:0.15em; text-transform:uppercase;
+    padding:16px 32px; -webkit-tap-highlight-color:transparent;
+    transition:opacity 0.2s;
+  }
+  .pin-btn:hover { opacity:0.9; }
+  .pin-btn:active { opacity:0.8; }
+
+  footer {
+    background:var(--deep); color:var(--taupe); text-align:center;
+    padding:28px 20px; font-size:12px; line-height:2;
+  }
+
+  @media (min-width: 768px) {
+    .room-wrap { padding:0 28px; }
+    .shop-section { padding:0 28px 88px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="site-logo">The<span>Fluffy</span>Lab</a>
+  <span class="header-tag">🩵 Spring Edit 2026</span>
+</header>
+
+<div class="page-intro">
+  <p class="eyebrow">🪴 Shop the Look</p>
+  <h1>The Spring Reading Corner —<br><em>every piece, shoppable</em></h1>
+  <p>Tap any numbered dot on the image, or scroll down to shop each item directly.</p>
+</div>
+
+<div class="room-wrap">
+  <img class="room-img" src="images/room2.jpg"
+       alt="Airy mint green spring reading corner with cream armchair, sleeping tabby cat, bird of paradise plant, botanical prints and gold arc floor lamp">
+  <div class="dots-layer">
+    
+        <a href="https://amzn.to/3P2Wzef" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-rattan-planter'})"
+           class="dot" style="left:14%;top:80%;"
+           data-id="1">
+          <span class="dot-inner">1</span>
+          <span class="dot-pulse"></span>
+        </a>
+        <a href="https://amzn.to/4b5iCtn" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-bird-paradise'})"
+           class="dot" style="left:22%;top:52%;"
+           data-id="2">
+          <span class="dot-inner">2</span>
+          <span class="dot-pulse"></span>
+        </a>
+        <a href="https://amzn.to/4lq3vht" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-botanical-prints'})"
+           class="dot" style="left:80%;top:28%;"
+           data-id="3">
+          <span class="dot-inner">3</span>
+          <span class="dot-pulse"></span>
+        </a>
+        <a href="https://amzn.to/4bno5us" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-vintage-rug'})"
+           class="dot" style="left:50%;top:94%;"
+           data-id="4">
+          <span class="dot-inner">4</span>
+          <span class="dot-pulse"></span>
+        </a>
+        <a href="https://amzn.to/4s8aRJd" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-accent-chair'})"
+           class="dot" style="left:52%;top:60%;"
+           data-id="5">
+          <span class="dot-inner">5</span>
+          <span class="dot-pulse"></span>
+        </a>
+        <a href="https://amzn.to/46UXNOH" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-oak-side-table'})"
+           class="dot" style="left:83%;top:70%;"
+           data-id="6">
+          <span class="dot-inner">6</span>
+          <span class="dot-pulse"></span>
+        </a>
+        <a href="https://amzn.to/4rlnC1H" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-floor-lamp'})"
+           class="dot" style="left:68%;top:35%;"
+           data-id="7">
+          <span class="dot-inner">7</span>
+          <span class="dot-pulse"></span>
+        </a>
+        <a href="https://amzn.to/4roI8hS" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-knit-throw'})"
+           class="dot" style="left:62%;top:80%;"
+           data-id="8">
+          <span class="dot-inner">8</span>
+          <span class="dot-pulse"></span>
+        </a>
+        <a href="https://amzn.to/3MZSlU6" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-white-plant-pot'})"
+           class="dot" style="left:36%;top:87%;"
+           data-id="9">
+          <span class="dot-inner">9</span>
+          <span class="dot-pulse"></span>
+        </a>
+        <a href="https://amzn.to/4umGYpV" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-ceramic-pots'})"
+           class="dot" style="left:89%;top:83%;"
+           data-id="10">
+          <span class="dot-inner">10</span>
+          <span class="dot-pulse"></span>
+        </a>
+  </div>
+</div>
+
+<div class="shop-section">
+  <h2>Shop <em>the look</em></h2>
+  
+        <a class="shop-card" href="https://amzn.to/3P2Wzef" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-rattan-planter'})">
+          <div class="shop-num">1</div>
+          <div class="shop-info">
+            <p class="shop-cat">Planters · Wicker</p>
+            <h3 class="shop-title">Woven Rattan Planter Basket</h3>
+            <p class="shop-desc">Oversized handwoven rattan, warm natural tones. Big enough for a statement plant. The kind of piece that anchors a whole corner.</p>
+            <span class="shop-cta">Shop on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-card" href="https://amzn.to/4b5iCtn" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-bird-paradise'})">
+          <div class="shop-num">2</div>
+          <div class="shop-info">
+            <p class="shop-cat">Plants · Faux</p>
+            <h3 class="shop-title">Faux Bird of Paradise — as tall as the real thing</h3>
+            <p class="shop-desc">Lifelike tropical leaves, zero maintenance. Fills a corner with the same presence as a real plant — without the watering guilt.</p>
+            <span class="shop-cta">Shop on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-card" href="https://amzn.to/4lq3vht" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-botanical-prints'})">
+          <div class="shop-num">3</div>
+          <div class="shop-info">
+            <p class="shop-cat">Wall Art · Botanical</p>
+            <h3 class="shop-title">Botanical Print Set — the gallery wall that goes with everything</h3>
+            <p class="shop-desc">Vintage-style plant illustrations in warm oak frames. Works in any neutral room. Pairs especially well with a green wall.</p>
+            <span class="shop-cta">Shop on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-card" href="https://amzn.to/4bno5us" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-vintage-rug'})">
+          <div class="shop-num">4</div>
+          <div class="shop-info">
+            <p class="shop-cat">Rugs · Vintage</p>
+            <h3 class="shop-title">Vintage Boho Floor Rug — the one that makes bare floors disappear</h3>
+            <p class="shop-desc">Faded vintage pattern, soft underfoot. Adds warmth without competing with anything else in the room.</p>
+            <span class="shop-cta">Shop on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-card" href="https://amzn.to/4s8aRJd" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-accent-chair'})">
+          <div class="shop-num">5</div>
+          <div class="shop-info">
+            <p class="shop-cat">Seating · Accent Chair</p>
+            <h3 class="shop-title">Cream Linen Accent Chair — the chair you never want to leave</h3>
+            <p class="shop-desc">Deep cushioned seat, wide arms, neutral cream linen. The reading chair you've been rearranging your room around in your head.</p>
+            <span class="shop-cta">Shop on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-card" href="https://amzn.to/46UXNOH" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-oak-side-table'})">
+          <div class="shop-num">6</div>
+          <div class="shop-info">
+            <p class="shop-cat">Furniture · Side Table</p>
+            <h3 class="shop-title">Solid Oak Round Side Table — simple, honest, forever</h3>
+            <p class="shop-desc">100% solid oak, three-leg tripod base. Holds your coffee, your books, your flowers. Gets better looking with every year.</p>
+            <span class="shop-cta">Shop on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-card" href="https://amzn.to/4rlnC1H" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-floor-lamp'})">
+          <div class="shop-num">7</div>
+          <div class="shop-info">
+            <p class="shop-cat">Lighting · Floor Lamp</p>
+            <h3 class="shop-title">Gold Arc Floor Lamp — the light that changes the whole mood</h3>
+            <p class="shop-desc">Brushed gold stem, white shade, warm directional light. Arcs over a chair exactly the way you're imagining it right now.</p>
+            <span class="shop-cta">Shop on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-card" href="https://amzn.to/4roI8hS" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-knit-throw'})">
+          <div class="shop-num">8</div>
+          <div class="shop-info">
+            <p class="shop-cat">Textiles · Throw</p>
+            <h3 class="shop-title">Chunky Knit Throw — drape it anywhere, the room improves</h3>
+            <p class="shop-desc">Soft waffle-knit texture, neutral cream. Leave it draped on a chair and it looks like a lifestyle photo. Because it is.</p>
+            <span class="shop-cta">Shop on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-card" href="https://amzn.to/3MZSlU6" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-white-plant-pot'})">
+          <div class="shop-num">9</div>
+          <div class="shop-info">
+            <p class="shop-cat">Planters · Minimalist</p>
+            <h3 class="shop-title">Matte White Plant Pot — the pot that disappears into the shelf</h3>
+            <p class="shop-desc">Clean cylindrical silhouette, matte white finish. Works for pilea, pothos, succulents — anything you want to show off, not the pot.</p>
+            <span class="shop-cta">Shop on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-card" href="https://amzn.to/4umGYpV" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'affiliate',event_label:'room2-ceramic-pots'})">
+          <div class="shop-num">10</div>
+          <div class="shop-info">
+            <p class="shop-cat">Planters · Ceramic</p>
+            <h3 class="shop-title">Ceramic Plant Pot Set — the ones that look expensive, aren't</h3>
+            <p class="shop-desc">Handcrafted ceramic, subtle texture, drainage hole included. Elevates any plant from forgettable to intentional.</p>
+            <span class="shop-cta">Shop on Amazon →</span>
+          </div>
+        </a>
+</div>
+
+<div class="pin-section">
+  <a class="pin-btn" href="https://www.pinterest.com/TheFluffyLab/" target="_blank" rel="noopener"
+     onclick="gtag('event','click',{event_category:'social',event_label:'pinterest-follow-stl2'})">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+    Follow @TheFluffyLab
+  </a>
+</div>
+
+<footer>
+  <p>© 2026 TheFluffyLab &nbsp;·&nbsp; Affiliate Disclosure</p>
+  <p style="margin-top:6px;opacity:0.5;font-size:11px;">As an Amazon Associate I earn from qualifying purchases. Affiliate links at no extra cost to you.</p>
+</footer>
+
+</body>
+</html>
