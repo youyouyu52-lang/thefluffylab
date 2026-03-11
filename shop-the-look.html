@@ -11,7 +11,10 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-WBYYY0XNMD');
+  gtag('config', 'G-WBYYY0XNMD', {
+    page_title: 'Shop the Look — Cozy Cat Reading Room',
+    page_path: '/thefluffylab/shop-the-look.html'
+  });
 </script>
 
 <link rel="preload" as="image" href="images/room1.jpg">
@@ -218,8 +221,19 @@
     text-transform: uppercase;
     color: white;
     background: var(--spring);
-    padding: 8px 16px;
-    display: inline-block;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .shop-card:hover .shop-cta {
+    background: var(--fern);
+    transform: translateX(3px);
+  }
+  .shop-card:active .shop-cta {
+    background: var(--deep);
+    transform: translateX(0);
   }
 
   /* PINTEREST BUTTON */
@@ -254,8 +268,7 @@
 
   /* DESKTOP */
   @media (min-width: 768px) {
-    .shop-card:hover { opacity: 0.85; }
-    .shop-card:hover .shop-cta { background: var(--moss); }
+    .shop-card:hover { opacity: 1; }
     .room-wrap { padding: 0 28px; }
     .shop-section { padding: 0 28px 88px; }
   }
