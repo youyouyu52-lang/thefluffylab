@@ -378,7 +378,7 @@
 
   /* === Product grid === */
   .products {
-    padding: 30px 5vw 100px;
+    padding: 100px 5vw 100px;
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
@@ -392,18 +392,37 @@
     gap: 32px;
     flex-wrap: wrap;
   }
+  .products-header-left { max-width: 640px; }
+  .products-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    color: var(--moss);
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
   .products-title {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 400;
-    font-size: clamp(30px, 3.2vw, 44px);
-    letter-spacing: -0.015em;
-    line-height: 1.1;
+    font-size: clamp(34px, 4vw, 54px);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin-bottom: 16px;
   }
   .products-title em { font-style: italic; color: var(--moss); }
+  .products-kicker {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(18px, 1.6vw, 22px);
+    line-height: 1.4;
+    color: var(--ink-soft);
+    font-weight: 400;
+  }
+  .products-kicker em { font-style: italic; color: var(--terracotta); }
   .products-meta {
     font-size: 13px;
     color: var(--ink-soft);
     letter-spacing: 0.04em;
+    padding-bottom: 6px;
   }
   .products-meta strong { color: var(--terracotta); }
 
@@ -683,7 +702,7 @@
     .grid { grid-template-columns: repeat(2, 1fr); gap: 30px 22px; }
     .why-grid { grid-template-columns: 1fr; gap: 30px; }
     .story { padding: 70px 6vw 50px; }
-    .products { padding: 20px 5vw 70px; }
+    .products { padding: 70px 5vw 70px; }
   }
   @media (max-width: 600px) {
     .ribbon { font-size: 10.5px; letter-spacing: 0.14em; padding: 10px 12px; }
@@ -766,28 +785,15 @@
   </div>
 </section>
 
-<!-- STORY -->
-<section class="story">
-  <div class="story-eyebrow">A Note Before You Scroll</div>
-  <h2 class="reveal">She talks to her plants more than her<br>group chats. <em>Honor that.</em></h2>
-  <p class="reveal">
-    Most Mother's Day guides hand you a generic mug and call it thoughtful. This one's different. Every gift here was picked for the woman whose <em>monstera has a name</em>, whose windowsill is a quiet ecosystem, who tells you the pothos is "just going through something."
-  </p>
-  <p class="reveal">
-    She doesn't need more flowers. She needs someone to notice <em>she's the one growing things.</em>
-  </p>
-  <div class="story-divider reveal">
-    <span class="line"></span>
-    <span class="leaf">❀</span>
-    <span class="line"></span>
-  </div>
-</section>
-
 <!-- PRODUCT GRID -->
 <section class="products" id="gifts">
   <div class="products-header">
-    <h2 class="products-title">The <em>Plant Mom</em> Collection</h2>
-    <div class="products-meta">7 hand-picked gifts · all <strong>under $30</strong> · Prime-eligible</div>
+    <div class="products-header-left">
+      <div class="products-eyebrow">7 hand-picked · all under $30</div>
+      <h2 class="products-title">The <em>Plant Mom</em> Collection</h2>
+      <p class="products-kicker">For the woman whose <em>monstera has a name.</em></p>
+    </div>
+    <div class="products-meta">Prime-eligible · arrives before May 10</div>
   </div>
 
   <div class="grid">
