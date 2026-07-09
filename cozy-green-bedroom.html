@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cozy Sage Green Bedroom — Shop the Look | The Fluffy Lab</title>
+<meta name="description" content="Every piece in this cozy sage green bedroom, linked: green checkered rug, gingham bedding, mushroom lamp, cloud pillow and more. A shop-the-look guide by The Fluffy Lab.">
+<meta property="og:title" content="The Cozy Sage Green Bedroom — Shop the Look">
+<meta property="og:description" content="Soft gingham, warm light, and a spot for the cat. Every piece in this room, linked.">
+<meta property="og:image" content="images/cozy-green-bedroom/hero.jpg">
+<meta property="og:type" content="article">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WBYYY0XNMD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WBYYY0XNMD');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --cream:#FBF9F2;
+    --card:#FFFFFF;
+    --sage:#A9BC99;
+    --sage-soft:#DFE9D5;
+    --moss:#43523F;
+    --moss-soft:#6B7A64;
+    --rose:#CE7360;
+    --rose-deep:#B85F4D;
+    --tag:#F2EAD8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Karla',sans-serif;
+    background:var(--cream);
+    color:var(--moss);
+    line-height:1.6;
+  }
+
+  /* ---------- header ---------- */
+  header{
+    text-align:center;
+    padding:44px 20px 8px;
+  }
+  .brand{
+    font-family:'Karla',sans-serif;
+    font-weight:700;
+    letter-spacing:.28em;
+    font-size:12px;
+    text-transform:uppercase;
+    color:var(--moss-soft);
+  }
+  h1{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    font-size:clamp(34px,6vw,58px);
+    letter-spacing:-0.01em;
+    margin:14px auto 10px;
+    max-width:16ch;
+    line-height:1.1;
+  }
+  h1 em{
+    font-style:italic;
+    color:var(--rose);
+  }
+  .sub{
+    max-width:46ch;
+    margin:0 auto;
+    color:var(--moss-soft);
+    font-size:17px;
+  }
+  .disclosure{
+    font-size:12.5px;
+    color:var(--moss-soft);
+    opacity:.85;
+    max-width:52ch;
+    margin:18px auto 0;
+  }
+
+  /* ---------- hero on gingham ---------- */
+  .hero-band{
+    margin-top:34px;
+    padding:clamp(22px,5vw,56px) 20px;
+    background:
+      repeating-linear-gradient(0deg, rgba(169,188,153,.30) 0 18px, transparent 18px 36px),
+      repeating-linear-gradient(90deg, rgba(169,188,153,.30) 0 18px, transparent 18px 36px),
+      #F4F2E8;
+  }
+  .hero-wrap{
+    position:relative;
+    max-width:640px;
+    margin:0 auto;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 18px 50px -18px rgba(67,82,63,.45);
+    background:#fff;
+    padding:12px;
+  }
+  .hero-wrap .inner{position:relative;border-radius:10px;overflow:hidden;}
+  .hero-wrap img{display:block;width:100%;height:auto;}
+
+  .dot{
+    position:absolute;
+    width:30px;height:30px;
+    transform:translate(-50%,-50%);
+    border-radius:50%;
+    background:var(--cream);
+    color:var(--moss);
+    border:2px solid var(--moss);
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:14px;
+    display:flex;align-items:center;justify-content:center;
+    cursor:pointer;
+    transition:transform .18s ease, background .18s ease, color .18s ease;
+    box-shadow:0 3px 10px rgba(67,82,63,.35);
+  }
+  .dot:hover,.dot:focus-visible{
+    background:var(--rose);
+    border-color:var(--rose);
+    color:#fff;
+    transform:translate(-50%,-50%) scale(1.18);
+    outline:none;
+  }
+  .dot::after{
+    content:attr(data-label);
+    position:absolute;
+    bottom:calc(100% + 8px);
+    left:50%;
+    transform:translateX(-50%);
+    background:var(--moss);
+    color:var(--cream);
+    font-family:'Karla',sans-serif;
+    font-size:12px;
+    font-weight:500;
+    letter-spacing:.02em;
+    padding:5px 10px;
+    border-radius:6px;
+    white-space:nowrap;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .18s ease;
+  }
+  .dot:hover::after,.dot:focus-visible::after{opacity:1}
+  .dot.paw{
+    background:var(--moss);
+    color:var(--cream);
+    border-color:var(--moss);
+    cursor:default;
+    font-size:13px;
+  }
+  .dot.paw:hover{background:var(--moss);border-color:var(--moss);transform:translate(-50%,-50%)}
+
+  .hero-hint{
+    text-align:center;
+    font-size:13px;
+    color:var(--moss-soft);
+    margin-top:16px;
+    letter-spacing:.04em;
+  }
+
+  /* ---------- product list ---------- */
+  .shop{
+    max-width:960px;
+    margin:0 auto;
+    padding:56px 20px 30px;
+  }
+  .shop-head{
+    display:flex;
+    align-items:baseline;
+    gap:16px;
+    margin-bottom:30px;
+  }
+  .shop-head h2{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    font-size:clamp(24px,3.4vw,32px);
+  }
+  .shop-head .rule{flex:1;height:1px;background:var(--sage)}
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:26px;
+  }
+  .item{
+    background:var(--card);
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 10px 30px -16px rgba(67,82,63,.35);
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    scroll-margin-top:24px;
+  }
+  .item .num{
+    position:absolute;
+    top:14px;left:14px;
+    background:var(--tag);
+    color:var(--moss);
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:15px;
+    width:34px;height:34px;
+    border-radius:50% 50% 50% 6px;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 2px 8px rgba(67,82,63,.25);
+  }
+  .item .ph{
+    aspect-ratio:1/1;
+    overflow:hidden;
+    background:var(--sage-soft);
+  }
+  .item .ph img{
+    width:100%;height:100%;
+    object-fit:cover;
+    display:block;
+    transition:transform .35s ease;
+  }
+  .item:hover .ph img{transform:scale(1.035)}
+  .item .body{
+    padding:18px 20px 22px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    flex:1;
+  }
+  .item h3{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:19px;
+    line-height:1.25;
+  }
+  .item p{
+    font-size:14.5px;
+    color:var(--moss-soft);
+    flex:1;
+  }
+  .btn{
+    align-self:flex-start;
+    margin-top:6px;
+    background:var(--rose);
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    font-size:14px;
+    letter-spacing:.03em;
+    padding:10px 18px;
+    border-radius:999px;
+    transition:background .18s ease, transform .18s ease;
+  }
+  .btn:hover{background:var(--rose-deep);transform:translateY(-1px)}
+  .btn:focus-visible{outline:3px solid var(--sage);outline-offset:2px}
+
+  /* ---------- footer ---------- */
+  footer{
+    margin-top:40px;
+    padding:34px 20px 44px;
+    text-align:center;
+    background:
+      repeating-linear-gradient(0deg, rgba(169,188,153,.22) 0 14px, transparent 14px 28px),
+      repeating-linear-gradient(90deg, rgba(169,188,153,.22) 0 14px, transparent 14px 28px),
+      #F4F2E8;
+    font-size:13.5px;
+    color:var(--moss-soft);
+  }
+  footer a{color:var(--moss);font-weight:700;text-decoration:none;border-bottom:1px solid var(--sage)}
+  footer .paws{font-family:'Fraunces',serif;font-size:17px;color:var(--moss);margin-bottom:6px}
+
+  @media (max-width:640px){
+    .grid{grid-template-columns:1fr;gap:20px}
+    .dot{width:26px;height:26px;font-size:12.5px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .dot,.btn,.item .ph img{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">The Fluffy Lab · Shop the Look</div>
+  <h1>The Cozy <em>Sage&nbsp;Green</em> Bedroom</h1>
+  <p class="sub">Soft gingham, warm mushroom-lamp light, and a rug the cat claimed on day one. Every piece in this room is linked below.</p>
+  <p class="disclosure">As an Amazon Associate, The Fluffy Lab earns from qualifying purchases — at no extra cost to you.</p>
+</header>
+
+<section class="hero-band">
+  <div class="hero-wrap">
+    <div class="inner">
+      <img src="images/cozy-green-bedroom/hero.jpg" alt="A cozy sage green bedroom with gingham bedding, a checkered rug and a cat" width="1086" height="1448">
+      <button class="dot" style="left:7.5%;top:29%" data-label="Flower Market print" onclick="go('p1')" aria-label="Flower Market framed print">1</button>
+      <button class="dot" style="left:45%;top:89%" data-label="Checkered plush rug" onclick="go('p2')" aria-label="Green checkered round rug">2</button>
+      <button class="dot" style="left:13%;top:71%" data-label="Eyelet lace bedding" onclick="go('p3')" aria-label="Eyelet lace gingham bedding">3</button>
+      <button class="dot" style="left:10%;top:48.5%" data-label="Gingham duvet set" onclick="go('p4')" aria-label="Green gingham duvet set">4</button>
+      <button class="dot" style="left:29.5%;top:44.5%" data-label="Mushroom lamp" onclick="go('p5')" aria-label="Cream mushroom table lamp">5</button>
+      <button class="dot" style="left:8%;top:57%" data-label="Plush cushion" onclick="go('p6')" aria-label="Bear plush cushion">6</button>
+      <button class="dot" style="left:15.5%;top:64%" data-label="Cloud pillow" onclick="go('p7')" aria-label="Cloud pillow">7</button>
+      <button class="dot" style="left:5.5%;top:82%" data-label="Sage faux-fur throw" onclick="go('p8')" aria-label="Sage faux fur throw blanket">8</button>
+      <button class="dot paw" style="left:63%;top:43%" data-label="Not for sale 🐾" aria-label="The cat — not for sale">♡</button>
+    </div>
+  </div>
+  <p class="hero-hint">Tap a number to jump to that piece ↓</p>
+</section>
+
+<main class="shop">
+  <div class="shop-head"><h2>Everything in this room</h2><div class="rule"></div></div>
+  <div class="grid">
+
+    <article class="item" id="p1">
+      <span class="num">1</span>
+      <div class="ph"><img src="images/cozy-green-bedroom/01-flower-market-print.jpg" alt="Flower Market London framed art print in sage green and rose" loading="lazy"></div>
+      <div class="body">
+        <h3>Flower Market framed print</h3>
+        <p>The sage-and-rose art print that sets the palette for the whole room. Arrives framed, ready to hang.</p>
+        <a class="btn" href="https://amzn.to/4wwsi7Z" target="_blank" rel="nofollow sponsored noopener">Shop on Amazon →</a>
+      </div>
+    </article>
+
+    <article class="item" id="p2">
+      <span class="num">2</span>
+      <div class="ph"><img src="images/cozy-green-bedroom/02-checkered-rug.jpg" alt="Round green and white checkered plush rug" loading="lazy"></div>
+      <div class="body">
+        <h3>Checkered plush round rug</h3>
+        <p>The fluffy green checkerboard rug every cozy green room seems to start with. Officially a cat landing pad.</p>
+        <a class="btn" href="https://amzn.to/3R0PfBc" target="_blank" rel="nofollow sponsored noopener">Shop on Amazon →</a>
+      </div>
+    </article>
+
+    <article class="item" id="p3">
+      <span class="num">3</span>
+      <div class="ph"><img src="images/cozy-green-bedroom/03-lace-gingham-bedding.jpg" alt="Sage green gingham bedding with embroidered eyelet lace trim" loading="lazy"></div>
+      <div class="body">
+        <h3>Eyelet lace gingham bedding</h3>
+        <p>Washed-cotton gingham with embroidered eyelet trim — soft, breathable, and very cottage.</p>
+        <a class="btn" href="https://amzn.to/4vg5OHf" target="_blank" rel="nofollow sponsored noopener">Shop on Amazon →</a>
+      </div>
+    </article>
+
+    <article class="item" id="p4">
+      <span class="num">4</span>
+      <div class="ph"><img src="images/cozy-green-bedroom/04-gingham-duvet-set.jpg" alt="Classic green gingham duvet cover set" loading="lazy"></div>
+      <div class="body">
+        <h3>Classic gingham duvet set</h3>
+        <p>The simpler take on the same soft green check — easy to layer, easy to wash.</p>
+        <a class="btn" href="https://amzn.to/3TaVRxr" target="_blank" rel="nofollow sponsored noopener">Shop on Amazon →</a>
+      </div>
+    </article>
+
+    <article class="item" id="p5">
+      <span class="num">5</span>
+      <div class="ph"><img src="images/cozy-green-bedroom/05-mushroom-lamp.jpg" alt="Cream mushroom dome table lamp on a wooden nightstand" loading="lazy"></div>
+      <div class="body">
+        <h3>Cream mushroom lamp</h3>
+        <p>A low, warm glow for the nightstand. Instant golden hour, any hour.</p>
+        <a class="btn" href="https://amzn.to/44ob00P" target="_blank" rel="nofollow sponsored noopener">Shop on Amazon →</a>
+      </div>
+    </article>
+
+    <article class="item" id="p6">
+      <span class="num">6</span>
+      <div class="ph"><img src="images/cozy-green-bedroom/06-bear-pillow.jpg" alt="Squishy brown bear face plush cushion" loading="lazy"></div>
+      <div class="body">
+        <h3>Bear plush cushion</h3>
+        <p>A squishy bear face that keeps the pillow stack from taking itself too seriously.</p>
+        <a class="btn" href="https://amzn.to/4pbgrJS" target="_blank" rel="nofollow sponsored noopener">Shop on Amazon →</a>
+      </div>
+    </article>
+
+    <article class="item" id="p7">
+      <span class="num">7</span>
+      <div class="ph"><img src="images/cozy-green-bedroom/07-cloud-pillow.jpg" alt="White plush cloud-shaped pillow" loading="lazy"></div>
+      <div class="body">
+        <h3>Cloud pillow</h3>
+        <p>A little cloud for the bed. Quite possibly the softest thing in the room.</p>
+        <a class="btn" href="https://amzn.to/4wyeMR5" target="_blank" rel="nofollow sponsored noopener">Shop on Amazon →</a>
+      </div>
+    </article>
+
+    <article class="item" id="p8">
+      <span class="num">8</span>
+      <div class="ph"><img src="images/cozy-green-bedroom/08-sage-fur-throw.jpg" alt="Sage green ruched faux fur throw blanket" loading="lazy"></div>
+      <div class="body">
+        <h3>Sage faux-fur throw</h3>
+        <p>The ruched faux-fur throw at the foot of the bed — heavy, warm, and the cat will claim it first.</p>
+        <a class="btn" href="https://amzn.to/4vvBlW0" target="_blank" rel="nofollow sponsored noopener">Shop on Amazon →</a>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <div class="paws">The Fluffy Lab</div>
+  <p>Cozy rooms for cats &amp; their humans · <a href="https://www.pinterest.com/TheFluffyLab/" target="_blank" rel="noopener">Pinterest @TheFluffyLab</a></p>
+  <p style="margin-top:8px;opacity:.8">As an Amazon Associate we earn from qualifying purchases.</p>
+</footer>
+
+<script>
+  function go(id){
+    document.getElementById(id).scrollIntoView({behavior:'smooth',block:'center'});
+  }
+  // 出站点击打点,方便你在 GA 里看每个单品的点击
+  document.querySelectorAll('.btn').forEach(function(a){
+    a.addEventListener('click', function(){
+      if (typeof gtag === 'function') {
+        gtag('event','affiliate_click',{item_name:a.closest('.item').querySelector('h3').textContent,page:'cozy-green-bedroom'});
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
